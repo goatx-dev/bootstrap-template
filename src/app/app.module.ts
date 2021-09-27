@@ -10,10 +10,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { Ng2GoogleChartsModule } from 'ng2-google-charts';
+import { DisplayHeaderComponent } from './display-header/display-header.component';
+import { DisplayFooterComponent } from './display-footer/display-footer.component';
+import { HomePageComponent } from './home-page/home-page.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DisplayHeaderComponent,
+    DisplayFooterComponent,
+    HomePageComponent
   ],
   imports: [
     BrowserModule,
