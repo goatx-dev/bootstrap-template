@@ -13,13 +13,15 @@ import { Ng2GoogleChartsModule } from 'ng2-google-charts';
 import { DisplayHeaderComponent } from './display-header/display-header.component';
 import { DisplayFooterComponent } from './display-footer/display-footer.component';
 import { HomePageComponent } from './home-page/home-page.component';
+import { AssetListComponent } from './asset-list/asset-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DisplayHeaderComponent,
     DisplayFooterComponent,
-    HomePageComponent
+    HomePageComponent,
+    AssetListComponent
   ],
   imports: [
     BrowserModule,
