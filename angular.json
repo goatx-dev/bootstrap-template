@@ -30,13 +30,21 @@
               "src/assets"
             ],
             "styles": [
-              "./node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "./src/assets/css/style.css",
-              "./node_modules/flatpickr/dist/flatpickr.min.css"
+              "./src/assets/css/bootstrap.min.css",              
+              "./node_modules/flatpickr/dist/flatpickr.min.css",
+              "./src/assets/css/icons.min.css",
+              "./src/assets/css/theme.min.css"              
             ],
             "scripts": [
-              "./node_modules/bootstrap/dist/js/bootstrap.min.js",
-              "./node_modules/jquery/dist/jquery.min.js",
+              "./src/assets/js/jquery.min.js",    
+              "./src/assets/js/bootstrap.bundle.min.js",                            
+              "./src/assets/js/metismenu.min.js",   
+              "./src/assets/js/waves.js",                            
+              "./src/assets/js/simplebar.min.js",                 
+              "./src/assets/plugins/morris-js/morris.min.js",   
+              "./src/assets/plugins/raphael/raphael.min.js",                 
+              "./src/assets/pages/dashboard-demo.js",  
+              "./src/assets/js/theme.js",  
               "./src/assets/owlcarousel/js/owl.carousel.min.js",
               "./src/assets/js/jquery.magnific-popup.js",
               "./src/assets/js/jquery.counterup.js",
@@ -46,9 +54,7 @@
               "./src/assets/js/easing.min.js",
               "./src/assets/js/wow.min.js",
               "./src/assets/js/ajaxchimp.min.js",
-              "./src/assets/js/main.js",
-              "./src/assets/js/ethers.js",
-              "./src/assets/js/contract_functions.js",
+              "./src/assets/js/main.js",        
               "./node_modules/apexcharts/dist/apexcharts.min.js",
               "./node_modules/flatpickr/dist/flatpickr.min.js"
             ]

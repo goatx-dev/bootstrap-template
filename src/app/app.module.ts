@@ -14,6 +14,13 @@ import { DisplayHeaderComponent } from './display-header/display-header.componen
 import { DisplayFooterComponent } from './display-footer/display-footer.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { AssetListComponent } from './asset-list/asset-list.component';
+import { AdminHomeComponent } from './admin-home/admin-home.component';
+import { BuildingSearchComponent } from './building-search/building-search.component';
+import { VerticalMenuComponent } from './vertical-menu/vertical-menu.component';
+import { FacilityHomeComponent } from './facility-home/facility-home.component';
+import { AddRecordTemplateComponent } from './add-record-template/add-record-template.component';
+import { ModalDialogTemplateComponent } from './modal-dialog-template/modal-dialog-template.component';
+import { Globals } from './globals';
 
 @NgModule({
   declarations: [
@@ -21,7 +28,13 @@ import { AssetListComponent } from './asset-list/asset-list.component';
     DisplayHeaderComponent,
     DisplayFooterComponent,
     HomePageComponent,
-    AssetListComponent
+    AssetListComponent,
+    AdminHomeComponent,
+    BuildingSearchComponent,
+    VerticalMenuComponent,
+    FacilityHomeComponent,
+    AddRecordTemplateComponent,
+    ModalDialogTemplateComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +48,7 @@ import { AssetListComponent } from './asset-list/asset-list.component';
     Ng2GoogleChartsModule,
     NgApexchartsModule
   ],
-  providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }],
+  providers: [Globals, { provide: LocationStrategy, useClass: HashLocationStrategy }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
