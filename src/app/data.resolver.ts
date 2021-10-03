@@ -68,3 +68,24 @@ export class DataResolver implements Resolve<boolean> {
     return (this.r)
   }
 }
+
+@Injectable({
+  providedIn: 'root'
+})
+export class MenuResolver implements Resolve<boolean> {
+
+  r: any;
+
+  constructor(private dataService: DataService) { }
+
+  resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<boolean> {
+     
+    this.r=this.dataService.getVerticalMenu().pipe(catchError(err=> 
+      { 
+        console.log(err);
+        return of(null);
+      }));
+      console.log(this.r);
+    return (this.r)
+  }
+}

@@ -1,0 +1,301 @@
+/* 1. Left sidenav */
+.metismenu {
+    margin: 0;
+  }
+  
+  .metismenu li {
+    display: block;
+    width: 100%;
+  }
+  
+  .metismenu .mm-collapse {
+    display: none;
+  }
+  
+  .metismenu .mm-collapse:not(.mm-show) {
+    display: none;
+  }
+  
+  .metismenu .mm-collapse.mm-show {
+    display: block;
+  }
+  
+  .metismenu .mm-collapsing {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    -webkit-transition-timing-function: ease;
+            transition-timing-function: ease;
+    -webkit-transition-duration: .35s;
+            transition-duration: .35s;
+    -webkit-transition-property: height, visibility;
+    transition-property: height, visibility;
+  }
+  
+  .vertical-menu {
+    width: 250px;
+    z-index: 1001;
+    background: #ffffff;
+    bottom: 0;
+    margin-top: 0;
+    position: fixed;
+    top: 70px;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.075);
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.075);
+  }
+  
+  .main-content {
+    margin-left: 250px;
+    overflow: hidden;
+  }
+  
+  .main-content .content {
+    padding: 0 15px 10px 15px;
+    margin-top: 70px;
+  }
+  
+  #sidebar-menu {
+    padding: 10px 0 30px 0;
+  }
+  
+  #sidebar-menu .mm-active > .has-arrow:after {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+    content: "\F374";
+    padding-top: 0;
+    padding-bottom: 2px;
+  }
+  
+  #sidebar-menu .has-arrow:after {
+    content: "\F415";
+    font-family: 'Material Design Icons';
+    display: block;
+    float: right;
+    -webkit-transition: -webkit-transform .2s;
+    transition: -webkit-transform .2s;
+    transition: transform .2s;
+    transition: transform .2s, -webkit-transform .2s;
+    padding-top: 2px;
+  }
+  
+  #sidebar-menu ul li a {
+    display: block;
+    padding: .65rem 1.5rem;
+    color: #747a80;
+    position: relative;
+    font-size: 14.5px;
+    -webkit-transition: all .4s;
+    transition: all .4s;
+  }
+  
+  #sidebar-menu ul li a:hover {
+    color: #383c40;
+  }
+  
+  #sidebar-menu ul li a i {
+    display: inline-block;
+    min-width: 1.75rem;
+    padding-bottom: .125em;
+    font-size: 1rem;
+    line-height: 1.40625rem;
+  }
+  
+  #sidebar-menu ul li .badge {
+    margin-top: 4px;
+  }
+  
+  #sidebar-menu ul li ul.sub-menu {
+    padding: 0;
+  }
+  
+  #sidebar-menu ul li ul.sub-menu li a {
+    padding: .4rem 1.5rem .4rem 3.25rem;
+    font-size: 14px;
+  }
+  
+  #sidebar-menu ul li ul.sub-menu li ul.sub-menu {
+    padding: 0;
+  }
+  
+  #sidebar-menu ul li ul.sub-menu li ul.sub-menu li a {
+    padding: .4rem 1.5rem .4rem 4.5rem;
+    font-size: 13.5px;
+  }
+  
+  .menu-title {
+    padding: 12px 20px !important;
+    letter-spacing: .05em;
+    pointer-events: none;
+    cursor: default;
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #747a80;
+    font-weight: 700;
+  }
+  
+  .mm-active .active {
+    color: #3281f2 !important;
+  }
+  
+  .mm-active .active:before {
+    content: "";
+    position: absolute;
+    top: .5rem;
+    bottom: .5rem;
+    left: 0;
+    right: auto;
+    border-left: 2px solid #3281f2;
+    border-bottom: 0;
+  }
+  
+  @media (max-width: 992px) {
+    .vertical-menu {
+      display: none;
+    }
+    .main-content {
+      margin-left: 0;
+    }
+  }
+  
+  body.enable-vertical-menu .vertical-menu,
+  body.enable-vertical-menu .menu-overlay {
+    display: block;
+  }
+  
+  .menu-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(33, 37, 41, 0.3);
+    display: none;
+    z-index: 1000;
+  }
+  
+  /* 2. Header */
+  #page-topbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1002;
+  }
+  
+  .navbar-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 auto;
+    height: 70px;
+    background-color: #3281f2;
+    -webkit-box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.15);
+    padding: 0 20px;
+  }
+  
+  .navbar-header .dropdown.show .header-item {
+    background-color: rgba(255, 255, 255, 0.15);
+  }
+  
+  .navbar-brand-box {
+    padding-left: 1.5rem;
+    text-align: center;
+  }
+  
+  .logo {
+    line-height: 70px;
+  }
+  
+  .logo i {
+    display: none;
+  }
+  
+  .page-title-box {
+    padding-bottom: 24px;
+  }
+  
+  .page-title-box .breadcrumb {
+    background-color: transparent;
+    padding: 0;
+  }
+  
+  @media (max-width: 992px) {
+    .navbar-brand-box {
+      padding-left: 0;
+    }
+    .logo {
+      padding-right: 15px;
+    }
+    .logo span {
+      display: none;
+    }
+    .logo i {
+      display: inline-block;
+    }
+  }
+  
+  .page-content {
+    padding: calc(70px + 24px) calc(24px / 2) 70px calc(24px / 2);
+  }
+  
+  .header-item {
+    height: 70px;
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+    color: #ffffff;
+    border: 0;
+  }
+  
+  .header-item:hover {
+    color: #ffffff;
+  }
+  
+  .header-profile-user {
+    height: 36px;
+    width: 36px;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 3px;
+  }
+  
+  .noti-icon i {
+    font-size: 24px;
+    color: #ffffff;
+  }
+  
+  .noti-icon .badge {
+    position: absolute;
+    top: 12px;
+  }
+  
+  .notification-item .media {
+    padding: 0.75rem 1rem;
+  }
+  
+  .notification-item .media:hover {
+    background-color: #f8f9fa;
+  }
+  
+  /* 3. Footer */
+  .footer {
+    border-top: 1px solid #dee2e6;
+    bottom: 0;
+    padding: 19px 12px 20px;
+    position: absolute;
+    right: 0;
+    color: #6c757d;
+    left: 250px;
+  }
+  
+  @media (max-width: 992px) {
+    .footer {
+      left: 0;
+    }
+  }
+  

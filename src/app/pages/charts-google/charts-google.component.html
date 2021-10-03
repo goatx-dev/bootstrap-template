@@ -1,0 +1,187 @@
+<app-header></app-header>
+<app-vertical-menu></app-vertical-menu>
+        <div class="main-content">
+
+            <div class="page-content">
+                <div class="container-fluid">
+
+                    <!-- start page title -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="page-title-box d-flex align-items-center justify-content-between">
+                                <h4 class="mb-0 font-size-18">Google Chart</h4>
+
+                                <div class="page-title-right">
+                                    <ol class="breadcrumb m-0">
+                                        <li class="breadcrumb-item"><a href="javascript: void(0);">UI Kit</a></li>
+                                        <li class="breadcrumb-item active">Google Chart</li>
+                                    </ol>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>     
+                    <!-- end page title -->
+
+                    <div class="row">
+                        <div class="col-xl-6">
+                            <div class="card">
+                                <div class="card-body">
+                    
+                                    <h4 class="card-title">Line Chart</h4>
+                                    <p class="card-subtitle mb-4">A line chart that is rendered within the browser using SVG or VML. Displays tooltips when hovering over points.</p>
+
+                                    <div class="chart" id="line-chart"></div>
+                    
+                                </div> <!-- end card-body-->
+                            </div> <!-- end card-->
+                        </div> <!-- end col -->
+                    
+                        <div class="col-xl-6">
+                            <div class="card">
+                                <div class="card-body">
+                    
+                                    <h4 class="card-title">Area Chart</h4>
+                                    <p class="card-subtitle mb-4">An area chart that is rendered within the browser using SVG or VML. Displays tips when hovering over points.</p>
+                                    
+                                    <div class="chart" id="area-chart"></div>
+                                </div> <!-- end card-body-->
+                            </div> <!-- end card-->
+                        </div> <!-- end col -->
+                    </div>
+                    <!-- end row-->
+
+                    <div class="row">
+                        <div class="col-xl-6">
+                            <div class="card">
+                                <div class="card-body">
+                    
+                                    <h4 class="card-title">Bar Chart</h4>
+                                    <p class="card-subtitle mb-4">Like all Google charts, bar charts display tooltips when the user hovers over the data.</p>
+
+                                    <div class="chart" id="bar-chart"></div>
+                    
+                                </div> <!-- end card-body-->
+                            </div> <!-- end card-->
+                        </div> <!-- end col -->
+                    
+                        <div class="col-xl-6">
+                            <div class="card">
+                                <div class="card-body">
+                    
+                                    <h4 class="card-title">Candlestick Charts</h4>
+                                    <p class="card-subtitle mb-4">An interactive candlestick chart.</p>
+
+                                    <div class="chart" id="candlestick-chart"></div>
+                    
+                                </div> <!-- end card-body-->
+                            </div> <!-- end card-->
+                        </div> <!-- end col -->
+                    </div>
+                    <!-- end row-->
+
+                    <div class="row">
+                        <div class="col-xl-6">
+                            <div class="card">
+                                <div class="card-body">
+                    
+                                    <h4 class="card-title">Column Chart</h4>
+                                    <p class="card-subtitle mb-4">A column chart is a vertical bar chart rendered in the browser using SVG or VML, whichever is appropriate for the user's browser.</p>
+                                    
+                                    <div class="chart" id="column-chart"></div>
+
+                                </div> <!-- end card-body-->
+                            </div> <!-- end card-->
+                        </div> <!-- end col -->
+                    
+                        <div class="col-xl-6">
+                            <div class="card">
+                                <div class="card-body">
+                    
+                                    <h4 class="card-title">Combo Chart</h4>
+                                    <p class="card-subtitle mb-4">A chart that lets you render each series as a different marker type from the following list: line, area, bars, candlesticks, and stepped area.</p>
+                                    
+                                    <div class="chart" id="combo-chart"></div>
+                                </div> <!-- end card-body-->
+                            </div> <!-- end card-->
+                        </div> <!-- end col -->
+                    </div>
+                    <!-- end row-->
+
+                    <div class="row">
+                        <div class="col-xl-6">
+                            <div class="card">
+                                <div class="card-body">
+                    
+                                    <h4 class="card-title">Pie Chart</h4>
+                                    <p class="card-subtitle mb-4">A pie chart that is rendered within the browser using SVG or VML. Displays tooltips when hovering over slices.</p>
+                                    
+                                    <div class="chart" id="piechart"></div>
+                                </div> <!-- end card-body-->
+                            </div> <!-- end card-->
+                        </div> <!-- end col -->
+                    
+                        <div class="col-xl-6">
+                            <div class="card">
+                                <div class="card-body">
+                    
+                                    <h4 class="card-title">3D Pie Chart</h4>
+                                    <p class="card-subtitle mb-4">If you set the <code>is3D</code> option to <code>true</code>, your pie chart will be drawn as though it has three dimensions:</p>
+                                    
+                                    <div class="chart" id="piechart-3d-chart"></div>
+                                </div> <!-- end card-body-->
+                            </div> <!-- end card-->
+                        </div> <!-- end col -->
+                    </div>
+                    <!-- end row-->
+
+                    <div class="row">
+                        <div class="col-xl-6">
+                            <div class="card">
+                                <div class="card-body">
+                    
+                                    <h4 class="card-title">Donut Chart</h4>
+                                    <p class="card-subtitle mb-4">A donut chart is a pie chart with a hole in the center. You can create donut charts with the pieHole option:</p>
+                                    
+                                    <div class="chart" id="donutchart"></div>
+                                </div> <!-- end card-body-->
+                            </div> <!-- end card-->
+                        </div> <!-- end col -->
+                    
+                        <div class="col-xl-6">
+                            <div class="card">
+                                <div class="card-body">
+                    
+                                    <h4 class="card-title">Exploding a Slice</h4>
+                                    <p class="card-subtitle mb-4">You can separate pie slices from the rest of the chart with the offset property of the slices option:</p>
+                                    
+                                    <div class="chart" id="exploding-slice-chart"></div>
+                                </div> <!-- end card-body-->
+                            </div> <!-- end card-->
+                        </div> <!-- end col -->
+                    </div>
+                    <!-- end row-->
+
+                </div> <!-- container-fluid -->
+            </div>
+            <!-- End Page-content -->
+
+            <footer class="footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            2021 © Artfin.
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="text-sm-right d-none d-sm-block">
+                                Designed & Developed by GexLabs
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+
+    <!-- Overlay-->
+    <div class="menu-overlay"></div>

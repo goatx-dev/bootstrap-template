@@ -1,0 +1,30 @@
+<div class="vertical-menu">
+
+    <div data-simplebar class="h-100">
+        <div id="sidebar-menu">
+            <ul class="metismenu list-unstyled" id="side-menu">
+                <li *ngFor="let m of data" [ngClass]="{'menu-title': m.badge === 'title'}"> 
+                    <span *ngIf="m.badge=='title'">{{ m.title }}</span>                  
+                    <a *ngIf="m.routerLink!=''&&m.badge!='title'" [routerLink]="[m.routerLink]" class="waves-effect">
+                        <i *ngIf="m.icon!=''" class="{{ m.icon}}"></i>
+                        <span *ngIf="m.badge!=''" class="badge badge-pill badge-info float-right">{{ m.badge }}</span><span>{{ m.title }}</span>
+                    </a>
+                    <a (click)="toggle(m.id)" *ngIf="m.routerLink==''&&m.badge!='title'" href="javascript: void(0);" class="has-arrow waves-effect">
+                        <i *ngIf="m.icon!=''" class="{{ m.icon}}"></i><span>{{ m.title }}</span>
+                    </a>
+                    <ul *ngIf="selection[m.id]=='Y'" class="sub-menu">
+                        <li *ngFor="let n of m.submenu">
+                            <a *ngIf="n.routerLink!=''" [routerLink]="[n.routerLink]">{{ n.title }}</a>
+                            <a (click)="toggle(n.id)" *ngIf="n.routerLink==''"  href="javascript: void(0);" class="has-arrow waves-effect">{{ n.title }}</a>                            
+                            <ul *ngIf="selection[n.id]=='Y'" class="sub-menu">
+                                <li *ngFor="let o of n.submenu"><a [routerLink]="[o.routerLink]">{{ o.title }}</a></li>
+                            </ul>                              
+                        </li>
+                    </ul>                
+                </li> 
+            </ul>
+        </div>
+        <!-- Sidebar -->
+    </div>
+</div>
+<!-- Left Sidebar End -->

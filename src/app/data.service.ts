@@ -13,7 +13,7 @@ export class DataService {
   role: any;
 
   constructor(private http: HttpClient) { 
-      this.url='https://deepgoat.com/api/router.php';
+      this.url='https://deepgoat.com/data/';
     }
 
   getLocalStorage() {
@@ -47,12 +47,23 @@ export class DataService {
 
   }
 
-  postData(path: any, formData: any[]) {
+  postForm(formID: any, formData: any[]) {
     this.getLocalStorage();
     const data = {
-      "q" : path,
+      "q" : formID,
       "data": formData,      
       "uid": this.uid
+    }
+
+  this.t= this.http.post(this.url, data);
+  return this.t;
+
+  }
+
+  getVerticalMenu() {
+    this.getLocalStorage()
+    const data = {
+      "q" : "vertical-menu"
     }
 
   this.t= this.http.post(this.url, data);

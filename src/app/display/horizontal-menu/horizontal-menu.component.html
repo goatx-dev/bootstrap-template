@@ -1,0 +1,24 @@
+<div class="topnav">
+    <div class="container-fluid mt-5 pt-3">
+        <nav class="navbar navbar-light navbar-expand-lg topnav-menu pt-3">
+            <div class="collapse navbar-collapse" id="topnav-menu-content">
+                <ul class="navbar-nav">
+                    <li *ngFor="let m of data" [ngClass]="{'nav-item    ': m.routerLink !== '', 'nav-item dropdown': m.routerLink === ''}">
+                        <!-- Link and NOT Dropdown -->
+                        <a *ngIf="m.routerLink!=''&&m.badge!='title'" [routerLink]="[m.routerLink]" class="nav-link">
+                            <i class="feather-home mr-2"></i>{{ m.title }}
+                        </a>                       
+                        <!-- No Link - IS Dropdown -->            
+                        <a *ngIf="m.routerLink==''&&m.badge!='title'" href="#" class="nav-link dropdown-toggle arrow-none" id="topnav-components" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <i *ngIf="m.icon!=''" class="{{ m.icon}}"></i> 
+                            {{ m.title }}
+                        </a>
+                         <div *ngIf="m.routerLink==''&&m.badge!='title'" class="dropdown-menu" aria-labelledby="topnav-components">
+                                <a *ngFor="let n of m.submenu" [routerLink]="[n.routerLink]" class="dropdown-item">{{ n.title }}</a>
+                            </div>            
+                    </li> 
+                </ul>
+            </div>
+        </nav>
+    </div>               
+</div>
