@@ -56,7 +56,7 @@
                                     </div>
 
                                     <div class="progress shadow-sm" style="height: 7px;">
-                                        <div class="progress-bar bg-primary" role="progressbar" style="width: {{ data.cost_per_unit_pct }};"></div>
+                                        <div class="progress-bar bg-primary" role="progressbar" [ngStyle]="{'width': data.cost_per_unit_pct }"></div>
                                     </div>
                                 </div>
                             </div>
@@ -81,7 +81,7 @@
                                     </div>
 
                                     <div class="progress shadow-sm" style="height: 7px;">
-                                        <div class="progress-bar bg-primary" role="progressbar" style="width: {{ data.market_revenue_pct }};"></div>
+                                        <div class="progress-bar bg-primary" role="progressbar" [ngStyle]="{'width': data.market_revenue_pct }"></div>
                                     </div>
                                 </div>
                             </div>
@@ -106,7 +106,7 @@
                                     </div>
 
                                     <div class="progress shadow-sm" style="height: 7px;">
-                                        <div class="progress-bar bg-primary" role="progressbar" style="width: {{ data.expenses_pct }};"></div>
+                                        <div class="progress-bar bg-primary" role="progressbar" [ngStyle]="{'width': data.expenses_pct }"></div>
                                     </div>
                                 </div>
                             </div>
@@ -131,7 +131,7 @@
                                     </div>
 
                                     <div class="progress shadow-sm" style="height: 7px;">
-                                        <div class="progress-bar bg-primary" role="progressbar" style="width: {{ data.daily_visits_pct }};"></div>
+                                        <div class="progress-bar bg-primary" role="progressbar" [ngStyle]="{'width': data.daily_visits_pct }"></div>
                                     </div>
                                 </div>
                             </div>

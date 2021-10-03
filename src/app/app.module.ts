@@ -64,6 +64,7 @@ import { IconsFontawesomeComponent } from './pages/icons-fontawesome/icons-fonta
 import { MapsGoogleComponent } from './pages/maps-google/maps-google.component';
 import { MapsVectorComponent } from './pages/maps-vector/maps-vector.component';
 import { CalendarComponent } from './pages/calendar/calendar.component';
+import { BlockedPageComponent } from './blocked-page/blocked-page.component';
 
 @NgModule({
   declarations: [
@@ -120,7 +121,8 @@ import { CalendarComponent } from './pages/calendar/calendar.component';
     IconsFontawesomeComponent,
     MapsGoogleComponent,
     MapsVectorComponent,
-    CalendarComponent
+    CalendarComponent,
+    BlockedPageComponent
   ],
   imports: [
     BrowserModule,

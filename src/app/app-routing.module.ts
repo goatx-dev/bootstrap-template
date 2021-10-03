@@ -51,12 +51,14 @@ import { UiTabsComponent } from './pages/ui-tabs/ui-tabs.component';
 import { UiToastsComponent } from './pages/ui-toasts/ui-toasts.component';
 import { UiTooltipsPopoversComponent } from './pages/ui-tooltips-popovers/ui-tooltips-popovers.component';
 import { UiTypographyComponent } from './pages/ui-typography/ui-typography.component';
-
+import { AuthGuard } from './auth.guard';
+import { BlockedPageComponent } from './blocked-page/blocked-page.component';
 const routes: Routes = [
   {
     path: '',
-    component: HomePageVerticalComponent,
-    resolve: { menudata: MenuResolver, data: DataResolver }
+    component: BlockedPageComponent,
+    resolve: { menudata: MenuResolver, data: DataResolver },
+    canActivate: [ AuthGuard ]
   },
   {
     path: 'v',
