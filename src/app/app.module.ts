@@ -65,6 +65,14 @@ import { MapsGoogleComponent } from './pages/maps-google/maps-google.component';
 import { MapsVectorComponent } from './pages/maps-vector/maps-vector.component';
 import { CalendarComponent } from './pages/calendar/calendar.component';
 import { BlockedPageComponent } from './blocked-page/blocked-page.component';
+import { FullCalendarModule } from '@fullcalendar/angular'; // must go before plugins
+import dayGridPlugin from '@fullcalendar/daygrid'; // a plugin!
+import interactionPlugin from '@fullcalendar/interaction'; // a plugin!
+
+FullCalendarModule.registerPlugins([ // register FullCalendar plugins
+  dayGridPlugin,
+  interactionPlugin
+]);
 
 @NgModule({
   declarations: [
@@ -134,9 +142,11 @@ import { BlockedPageComponent } from './blocked-page/blocked-page.component';
     Ng2SearchPipeModule,
     NgbModule,
     Ng2GoogleChartsModule,
-    NgApexchartsModule
+    NgApexchartsModule,
+    FullCalendarModule
   ],
   providers: [Globals, { provide: LocationStrategy, useClass: HashLocationStrategy }],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }
