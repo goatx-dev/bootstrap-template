@@ -1,0 +1,30 @@
+
+<app-header></app-header>
+<app-vertical-menu></app-vertical-menu>
+    <div class="bg-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="d-flex align-items-center min-vh-100">
+                        <div class="w-100 d-block bg-white shadow-lg rounded my-5">
+                            <div class="row">
+                                <div class="col-lg-5 d-none d-lg-block bg-register rounded-left"></div>
+                                <div class="col-lg-7">
+                                    <div class="p-5">
+                                        <h1>Sample File Uploader</h1>
+
+                                        <angular-file-uploader
+                                            [config]="afuConfig"
+                                            (ApiResponse)="docUpload($event)">
+                                        </angular-file-uploader>
+                                    </div> <!-- end .padding-5 -->
+                                </div> <!-- end col -->
+                            </div> <!-- end row -->
+                        </div> <!-- end .w-100 -->
+                    </div> <!-- end .d-flex -->
+                </div> <!-- end col-->
+            </div> <!-- end row -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end page -->

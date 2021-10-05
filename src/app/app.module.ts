@@ -67,7 +67,9 @@ import { CalendarComponent } from './pages/calendar/calendar.component';
 import { BlockedPageComponent } from './blocked-page/blocked-page.component';
 import { FullCalendarModule } from '@fullcalendar/angular'; // must go before plugins
 import dayGridPlugin from '@fullcalendar/daygrid'; // a plugin!
-import interactionPlugin from '@fullcalendar/interaction'; // a plugin!
+import interactionPlugin from '@fullcalendar/interaction';
+import { FileUploadComponent } from './pages/file-upload/file-upload.component'; // a plugin!
+import { AngularFileUploaderModule } from "angular-file-uploader";
 
 FullCalendarModule.registerPlugins([ // register FullCalendar plugins
   dayGridPlugin,
@@ -130,7 +132,8 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
     MapsGoogleComponent,
     MapsVectorComponent,
     CalendarComponent,
-    BlockedPageComponent
+    BlockedPageComponent,
+    FileUploadComponent
   ],
   imports: [
     BrowserModule,
@@ -143,7 +146,8 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
     NgbModule,
     Ng2GoogleChartsModule,
     NgApexchartsModule,
-    FullCalendarModule
+    FullCalendarModule,
+    AngularFileUploaderModule
   ],
   providers: [Globals, { provide: LocationStrategy, useClass: HashLocationStrategy }],
   bootstrap: [AppComponent]

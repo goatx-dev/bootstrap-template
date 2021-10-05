@@ -53,6 +53,7 @@ import { UiTooltipsPopoversComponent } from './pages/ui-tooltips-popovers/ui-too
 import { UiTypographyComponent } from './pages/ui-typography/ui-typography.component';
 import { AuthGuard } from './auth.guard';
 import { BlockedPageComponent } from './blocked-page/blocked-page.component';
+import { FileUploadComponent } from './pages/file-upload/file-upload.component';
 const routes: Routes = [
   {
     path: '',
@@ -109,6 +110,10 @@ const routes: Routes = [
     path: 'faqs',
     component: FaqsComponent,
     resolve: { menudata: MenuResolver }
+  },
+  {
+    path: 'file-uploads',
+    component: FileUploadComponent
   },
   {
     path: 'forms-elements',
